@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" version="1.1" id="svg12" sodipodi:docname="09318df9c6cf5f9e07bcc19f8a078ce3.svg"><metadata><meta name="Producer" content="Online-Convert"/></metadata>
+  <defs id="defs16"/>
+  <sodipodi:namedview id="namedview14" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"/>
+  <path d="M128 128H160V160H128V128Z" fill="black" id="path2"/>
+  <path d="M96 128V96H128V128H96Z" fill="black" id="path4"/>
+  <path d="M96 128V160H64V128H96Z" fill="black" id="path6"/>
+  <path d="M192 64H160V96H192V64Z" fill="black" id="path8"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V256H256V0H0ZM224 224H160V192H192V160H224V224ZM160 160H192V128H224V32H32V160H64V192H32V224H128V192H160V160Z" fill="black" id="path10"/>
+</svg>
