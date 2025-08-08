@@ -279,6 +279,7 @@
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-basic-text-color);
+  flex-shrink: 0;
 }
 
 .btn-show-modal-text {
@@ -290,4 +291,6 @@
   vertical-align: middle;
   margin-inline-start: 9px;
   margin-block-start: 2px;
+  white-space: nowrap;
+  
 }
