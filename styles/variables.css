@@ -19,14 +19,14 @@
 
 
     --theme-bg: #fff;
-  --button-basic-text-color: #000;
-  --accent-color: #000;
-  --contour-color: #000;
-  --animation-fill-color: #ff0000;
-  --liked-color: #ff0000;
-  --sparks-opacity: 0;
-  --contour-color: #000;
-  --core-color: transparent;
-  --main-body-color: transparent;
+    --button-difference-color: #fff;
+    --accent-color: #000;
+    --contour-color: #000;
+    --animation-fill-color: #ff0000;
+    --liked-color: #ff0000;
+    --sparks-opacity: 0;
+    --contour-color: #000;
+    --core-color: transparent;
+    --main-body-color: transparent;
     
 }
