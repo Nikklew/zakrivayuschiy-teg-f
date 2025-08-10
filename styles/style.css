@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-fontfam);
+  font-family: var(--main-font-fam);
   font-variation-settings: "wght" var(--main-basic-fw) "slnt" 0;
   background-image: var(--bg-gradient);
   background-size: cover;
@@ -34,7 +34,7 @@
   display: block;
   text-align: center;
   inline-size: 100%;
-  font-family: var(--accent-fontfam);
+  font-family: var(--accent-font-fam);
   font-style: normal;
   text-transform: uppercase;
   padding-block-start: clamp(122px, 22%, 130px);
@@ -76,7 +76,7 @@
 }
 
 .card__title {
-  font-family: var(--main-fontfam);
+  font-family: var(--main-font-fam);
   font-variation-settings: "wght" var(--main-title-fw), "slnt" 0;
   font-size: 18px;
   line-height: 22px;
@@ -111,7 +111,7 @@
   position: absolute;
   top: 27px;
   right: 25px;
-  font-family: var(--accent-fontfam);
+  font-family: var(--accent-font-fam);
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -125,13 +125,9 @@
     1px 0 var(--theme-bg), 0 -1px var(--theme-bg);
 }
 
-@supports (
-  (text-stroke: 1px var(--theme-bg)) or
-    (-webkit-text-stroke: 1px var(--theme-bg))
-) {
+@supports ((-webkit-text-stroke: 1px var(--theme-bg))) {
   .card__label {
     -webkit-text-stroke: 1px var(--theme-bg);
-    text-stroke: 1px var(--theme-bg);
     text-shadow: none;
   }
 }
@@ -141,7 +137,7 @@
   flex-direction: column;
   gap: 25px;
   inline-size: clamp(321px, calc(206.563px + 30.516vw), 646px);
-  font-family: var(--main-fontfam);
+  font-family: var(--main-font-fam);
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0;
@@ -212,9 +208,6 @@
   transition-delay: 0.05s;
 }
 
-.like-icon:active .contour {
-  --contour-color: var(--animation-fill-color);
-}
 
 .like-icon:active .core {
   --core-color: var(--animation-fill-color);
@@ -257,6 +250,10 @@
 
 .button:focus {
   outline: none;
+}
+
+.button:focus-visible {
+  outline: none;
   box-shadow: 2px 2px 0px 0px #000000;
 }
 
@@ -274,7 +271,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-fontfam);
+  font-family: var(--accent-font-fam);
   font-size: 14px;
   position: relative;
   line-height: 1.5;
@@ -299,7 +296,7 @@
 .save-container__button-show-modal {
   display: flex;
   flex-direction: row;
-  inline-size: clamp(306px, calc(295.789px + 2.723vw), 335px);
+  inline-size: clamp(325px, calc(321.479px + 0.939vw), 335px);
   block-size: clamp(55px, calc(44.789px + -2.723vw), 84px);
   margin-block-end: 100px;
   align-items: center;
@@ -311,12 +308,12 @@
   margin-inline-start: 12px;
   mix-blend-mode: difference;
   color: var(--button-difference-color);
-  min-height: 10px;
-  min-width: 10px;
+  min-height: 21px;
+  min-width: 21px;
 }
 
 .button-show-modal-text {
-  font-family: var(--accent-fontfam);
+  font-family: var(--accent-font-fam);
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -326,24 +323,21 @@
   margin-inline-start: 9px;
   margin-block-start: 2px;
   white-space: nowrap;
+
 }
 
 .dialog-window {
   inline-size: clamp(341px, calc(336.7746px + 1.1268vw), 353px);
   border: 2px solid #000000;
+  padding: 30px;
 }
 
 .dialog-container {
   display: grid;
-  grid-template-columns: 45px 234px;
+  grid-template-columns: 45px 220px;
   grid-template-rows: auto;
-  grid-template-areas:
-    "floppy text"
-    "button button";
   row-gap: 18px;
   border-width: 2px;
-  margin-inline-start: clamp(10px, calc(23.5211px + -0.939vw), 20px);
-  padding-block-start: 15px;
 }
 
 .dialog-window::backdrop {
@@ -357,47 +351,45 @@
 }
 
 .dialog-container__text {
-  grid-area: "text";
-  font-family: var(--accent-fontfam);
+  font-family: var(--accent-font-fam);
   font-weight: 400;
   font-style: normal;
-
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 150%;
   letter-spacing: 0;
   text-transform: uppercase;
   padding-inline-start: 15px;
 }
 
-.dialog-container-ok {
-  grid-area: "button";
+.dialog-container__button {
   line-height: 90%;
   width: clamp(261px, calc(249.7324px + 3.0047vw), 293px);
   height: 38px;
   margin-block-start: 10px;
-  margin-block-end: 10px;
+  text-transform: uppercase;
 }
 
-.grayscale {
+.filter-grayscale {
   filter: grayscale(1);
 }
 
-.saturate {
+.filter-saturate {
   filter: saturate(558%);
 }
 
-.brightness {
+.filter-brightness {
   filter: brightness(87%);
 }
 
-.contrast {
+.filter-contrast {
   filter: contrast(300%);
 }
 
-.blur-filter {
+.filter-blur {
   filter: blur(0.4rem);
 }
 
-.hue-rotate {
+.filter-hue-rotate {
   filter: hue-rotate(-99deg);
 }
 
@@ -405,7 +397,7 @@
   filter: sepia(10%) brightness(90%) blur(0.2rem);
 }
 
-@media (width <= 425px) {
+@media (width <=425px) {
   .save-container__button-show-modal {
     flex-direction: column;
     min-block-size: 84px;
